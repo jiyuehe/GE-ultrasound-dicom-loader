@@ -19,7 +19,7 @@ In Windows:
   - then will receive an email giving access to the GitHub code below
 - https://github.com/GEUltrasound/GE_CVUS_Loader/releases
   - download GE_CVUS_Loader-3.39.3.zip 
-  - unzip it
+  - unzip it to a place to keep it there, for example, put it in C:\
 
 - in Windows search bar, type "terminal", right click to "Run as administrator"
   - cd to folder "[some_path]\GE_CVUS_Loader-3.39.3\bin64"
