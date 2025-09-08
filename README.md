@@ -10,6 +10,10 @@ In Windows:
 
 - install Visual Studio Code
 
+- install Visual C++ Redistributable for Visual Studio 2015-2019 (x64): search to find the download site,
+  - for example, may find: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+  - download and install the "X64 -> https://aka.ms/vs/17/release/vc_redist.x64.exe"
+
 - https://www.gehealthcare.com/products/ultrasound-developer-program
   - click "ULTRASOUND SOFTWARE DEVELOPER SIGNUP"
   - then will receive an email giving access to the GitHub code below

@@ -1,7 +1,7 @@
 #%%
 import os
 import sys
-import comtypes
+import comtypes # pip install comtypes
 import comtypes.client
 import numpy as np
 from pathlib import Path
@@ -10,7 +10,7 @@ from utils import FrameTo3dArray
 from utils import TypeLibFromObject
 from nhdr_header import generate_nhdr_header
 from pydicom import dcmread # NOTE: pydicom version 3.0 or above won't work. pip install "pydicom<3.0"
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # pip install matplotlib
 import matplotlib.animation as animation
 import cv2 # OpenCV. for creating a movie. pip install opencv-python
 
@@ -36,18 +36,18 @@ if do_flag == 1:
 # ------------------------------------------------------------
 # INSERT THE DICOMDIR FILE PATH
 # NOTE: use "\\", becuase this runs in Windows
-file_path = 'Z:\\patient ultrasound data, GE\\598862 PAC, clear image' + '\\DICOMDIR' # clear image
-# file_path = 'Z:\\patient ultrasound data, GE\\196303 PVC' + '\\DICOMDIR'
-# file_path = 'Z:\\patient ultrasound data, GE\\494400 20 seconds' + '\\DICOMDIR'
-# file_path = 'Z:\\patient ultrasound data, GE\\559098 last beat' + '\\DICOMDIR'
-# file_path = 'Z:\\patient ultrasound data, GE\\559098 PAC' + '\\DICOMDIR'
-# file_path = 'Z:\\patient ultrasound data, GE\\598862 all beats' + '\\DICOMDIR'
-# file_path = 'Z:\\patient ultrasound data, GE\\598862 Normal' + '\\DICOMDIR'
-# file_path = 'Z:\\patient ultrasound data, GE\\598862 PAC_R2R' + '\\DICOMDIR'
-# file_path = 'Z:\\patient ultrasound data, GE\\598862 selected 3 beats' + '\\DICOMDIR'
-# file_path = 'Z:\\patient ultrasound data, GE\\598862 slected 1 beat' + '\\DICOMDIR'
-# file_path = 'Z:\\patient ultrasound data, GE\\605660 multiple recordings' + '\\DICOMDIR'
-# file_path = 'Z:\\patient ultrasound data, GE\\625157_BeatAFIB multiple recordings' + '\\DICOMDIR'
+file_path = 'Z:\\GE ultrasound data, patient\\598862 PAC, clear image' + '\\DICOMDIR' # clear image
+# file_path = 'Z:\\GE ultrasound data, patient\\196303 PVC' + '\\DICOMDIR'
+# file_path = 'Z:\\GE ultrasound data, patient\\494400 20 seconds' + '\\DICOMDIR'
+# file_path = 'Z:\\GE ultrasound data, patient\\559098 last beat' + '\\DICOMDIR'
+# file_path = 'Z:\\GE ultrasound data, patient\\559098 PAC' + '\\DICOMDIR'
+# file_path = 'Z:\\GE ultrasound data, patient\\598862 all beats' + '\\DICOMDIR'
+# file_path = 'Z:\\GE ultrasound data, patient\\598862 Normal' + '\\DICOMDIR'
+# file_path = 'Z:\\GE ultrasound data, patient\\598862 PAC_R2R' + '\\DICOMDIR'
+# file_path = 'Z:\\GE ultrasound data, patient\\598862 selected 3 beats' + '\\DICOMDIR'
+# file_path = 'Z:\\GE ultrasound data, patient\\598862 slected 1 beat' + '\\DICOMDIR'
+# file_path = 'Z:\\GE ultrasound data, patient\\605660 multiple recordings' + '\\DICOMDIR'
+# file_path = 'Z:\\GE ultrasound data, patient\\625157_BeatAFIB multiple recordings' + '\\DICOMDIR'
 
 DICOMDIR_path = Path(file_path) 
 # ------------------------------------------------------------
