@@ -50,7 +50,7 @@ Choose export format: RawDicom (*.dcm).
   - open it and run VBoxWindowsAdditions.exe.
   - reboot Windows when it finishes.
 
-- setup a share folder across Manjaro and Windows
+- setup a share folder across Ubuntu and Windows
   - Power off the virtual Windows if it's running
   - Settings -> Shared Folders
   - Click the + (Adds new shared folder) icon. Folder Path: Choose a folder from your host machine. Check Auto-mount
