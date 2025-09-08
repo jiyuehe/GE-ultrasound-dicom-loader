@@ -33,6 +33,28 @@ In Windows:
 # Notes for how to export ultrasound data from GE machine
 Choose export format: RawDicom (*.dcm).
 
+# Install Windows in Ubuntu Linux system  
+- install virtualbox
+- install windows inside virtualbox
+
+- enable Windows screen size adjustment by installing VirtualBox guest additions
+  - in Ubuntu terminal: sudo apt install virtualbox-guest-additions-iso
+  - this will place the ISO under: /usr/share/virtualbox/VBoxGuestAdditions.iso
+  - (shut down the Windows VM.) Open VirtualBox Manager -> select your Windows VM -> Settings -> Storage.
+  - under the Controller (IDE/SATA), highlight the Empty optical drive.
+  - if it doesn’t exist, add an Optical Drive.
+  - click the CD icon on the right -> Choose a disk file….
+  - browse to: /usr/share/virtualbox/VBoxGuestAdditions.iso
+  - start your Windows VM.
+  - in This PC, you should now see a CD drive: VirtualBox Guest Additions.
+  - open it and run VBoxWindowsAdditions.exe.
+  - reboot Windows when it finishes.
+
+- setup a share folder across Manjaro and Windows
+  - Power off the virtual Windows if it's running
+  - Settings -> Shared Folders
+  - Click the + (Adds new shared folder) icon. Folder Path: Choose a folder from your host machine. Check Auto-mount
+
 # Install Windows in Manjaro Linux system
 
 - https://www.virtualbox.org/wiki/Downloads
